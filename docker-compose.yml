@@ -1,0 +1,25 @@
+version: '3'
+services:
+  web:
+    image: 'nginx:latest'
+    ports:
+      - '10182:80'
+    volumes:
+      - './.docker/nginx/conf.d/:/etc/nginx/conf.d/'
+      - '.:/var/www/'
+  php:
+    build:
+      context: .
+      dockerfile: .docker/php/Dockerfile
+    volumes:
+      - '.:/var/www/'
+  mysql:
+    image: 'mysql:oracle'
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - './.docker/mysql/custom.cnf:/etc/mysql/conf.d/custom.cnf'
+      - './.docker/mysql/charset.cnf:/etc/mysql/conf.d/charset.cnf'
+      - './.db:/var/lib/mysql'
+    ports:
+      - '3382:3306'
