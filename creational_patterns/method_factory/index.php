@@ -2,6 +2,8 @@
 
 namespace RefactoringGuru\FactoryMethod\Conceptual;
 
+include_once '../../helper/index.php';
+
 /**
  * The Creator class declares the factory method that is supposed to return an
  * object of a Product class. The Creator's subclasses usually provide the
@@ -76,7 +78,7 @@ class ConcreteProduct1 implements Product
 {
     public function operation(): string
     {
-        return "{Result of the ConcreteProduct1}";
+        return "<b>{Result of the ConcreteProduct1}</b>";
     }
 }
 
@@ -84,7 +86,7 @@ class ConcreteProduct2 implements Product
 {
     public function operation(): string
     {
-        return "{Result of the ConcreteProduct2}";
+        return "<b>{Result of the ConcreteProduct2}</b>";
     }
 }
 
@@ -96,8 +98,8 @@ class ConcreteProduct2 implements Product
 function clientCode(Creator $creator)
 {
     // ...
-    echo "Client: I'm not aware of the creator's class, but it still works.\n"
-        . $creator->someOperation();
+    writeln("Client: I'm not aware of the creator's class, but it still works.");
+    writeln($creator->someOperation());
     // ...
 }
 
@@ -105,9 +107,9 @@ function clientCode(Creator $creator)
  * The Application picks a creator's type depending on the configuration or
  * environment.
  */
-echo "App: Launched with the ConcreteCreator1.\n";
+writeln("App: Launched with the ConcreteCreator1.");
 clientCode(new ConcreteCreator1());
-echo "<br>";
 
-echo "App: Launched with the ConcreteCreator2.\n";
+
+writeln("App: Launched with the ConcreteCreator2.");
 clientCode(new ConcreteCreator2());
