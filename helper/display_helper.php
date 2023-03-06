@@ -15,11 +15,6 @@ function d_json($object)
     echo json_encode($object);
 }
 
-function dump($object)
-{
-    var_dump($object);
-}
-
 function d_arr($arr, $hasMultiLine = true)
 {
     echo sprintf(
@@ -28,4 +23,15 @@ function d_arr($arr, $hasMultiLine = true)
         print_r($arr, true),
         $hasMultiLine ? '</pre>' : ''
     );
+}
+
+function d_htmlspecialchars (string $htmlString, string $head = '')
+{
+    if (!empty($head)) {
+        echo "<strong>{$head}</strong><hr>";
+    }
+
+    echo '<pre>';
+    echo htmlspecialchars($htmlString);
+    echo '</pre><br>';
 }

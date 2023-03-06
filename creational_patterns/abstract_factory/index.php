@@ -1,56 +1,15 @@
 <?php
-abstract class AbstractFactory
-{
-    abstract public function createText($mode, $content);
-}
 
-class Factory extends AbstractFactory
-{
-    public function createText($mode, $content)
-    {
-        switch (strtolower($mode)) {
-            case 'htmltext':
-                return new HtmlText($content);
-                break;
-            case 'jsontext':
-                return new JsonText($content);
-                break;
-            default:
-                return ;
-                break;
-        }
-    }
-}
-abstract class Text
-{
-    private $text;
-    public function __construct($string)
-    {
-        $this->text = $string;
-    }
-    public function getText()
-    {
-        return $this->text;
-    }
-}
+use DesignPattern\CreationalPattern\AbstractFactory\FormatCreator;
 
-class HtmlText extends Text
-{
-    //code
-}
+require_once '../../core/index.php';
 
-class JsonText extends Text
-{
-    //code
-}
+$factory = new FormatCreator();
 
-//Khởi tạo lớp Factory
-$factory = new Factory();
+$xml = $factory->setData('xml', '<xml></xml>');
 
-$html = $factory->createText('htmltext','HTML');
+d_htmlspecialchars($xml->getData(), 'XML'); // <xml></xml>
 
-echo $html->getText(); //HTML
+$json = $factory->setData('json', '{}');
 
-$json = $factory->createText('jsontext','JSON');
-
-echo $json->getText(); //JSON
+d_htmlspecialchars($json->getData(), 'JSON'); // {}

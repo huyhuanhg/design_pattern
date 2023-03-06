@@ -1,6 +1,7 @@
 version: '3'
 services:
   web:
+    container_name: design_parttern_nginx
     image: 'nginx:latest'
     ports:
       - '10182:80'
@@ -8,12 +9,14 @@ services:
       - './.docker/nginx/conf.d/:/etc/nginx/conf.d/'
       - '.:/var/www/'
   php:
+    container_name: design_parttern_php
     build:
       context: .
       dockerfile: .docker/php/Dockerfile
     volumes:
       - '.:/var/www/'
   mysql:
+    container_name: design_parttern_mysql
     image: 'mysql:oracle'
     environment:
       MYSQL_ROOT_PASSWORD: password
