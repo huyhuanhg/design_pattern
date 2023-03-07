@@ -10,6 +10,7 @@ $namespaceMap = [
     md5('DesignPattern\Creational\LazyInitialization') => 'design_patterns/creational_patterns/lazy_initialization/src',
     md5('DesignPattern\Creational\ObjectPool') => 'design_patterns/creational_patterns/object_pool/src',
     md5('DesignPattern\Structural\DependencyInjection') => 'design_patterns/structural_patterns/dependency_injection/src',
+    md5('DesignPattern\Structural\Adapter') => 'design_patterns/structural_patterns/adapter/src',
 ];
 
 function autoload(string $class)
