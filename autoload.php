@@ -16,6 +16,10 @@ $namespaceMap = [
     md5('DesignPattern\Structural\Proxy') => 'design_patterns/structural_patterns/proxy/src',
     md5('DesignPattern\Structural\Registry') => 'design_patterns/structural_patterns/registry/src',
     md5('DesignPattern\Structural\Composite') => 'design_patterns/structural_patterns/composite/src',
+    md5('DesignPattern\Structural\DataMapper') => 'design_patterns/structural_patterns/data_mapper/src',
+    md5('DesignPattern\Structural\Decorator') => 'design_patterns/structural_patterns/decorator/src',
+    md5('DesignPattern\Structural\Flyweight') => 'design_patterns/structural_patterns/flyweight/src',
+    md5('DesignPattern\Structural\FluentInterface') => 'design_patterns/structural_patterns/fluent_interface/src',
 ];
 
 function autoload(string $class)
