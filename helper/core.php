@@ -1,7 +1,7 @@
 <?php
 
-use DesignPattern\Config;
-use DesignPattern\Registry;
+use DesignPatterns\Config;
+use DesignPatterns\Registry;
 
 function registry() {
     return Registry::instance();

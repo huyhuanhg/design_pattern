@@ -1,15 +1,25 @@
 <?php
 
 $namespaceMap = [
-    md5('DesignPattern') => 'core',
-    md5('DesignPattern\Creational\AbstractFactory') => 'design_patterns/creational_patterns/abstract_factory/src',
-    md5('DesignPattern\Creational\Builder') => 'design_patterns/creational_patterns/builder/src',
-    md5('DesignPattern\Creational\FactoryMethod') => 'design_patterns/creational_patterns/method_factory/src',
-    md5('DesignPattern\Creational\Singleton') => 'design_patterns/creational_patterns/singleton/src',
-    md5('DesignPattern\Creational\Prototype') => 'design_patterns/creational_patterns/prototype/src',
-    md5('DesignPattern\Creational\LazyInitialization') => 'design_patterns/creational_patterns/lazy_initialization/src',
-    md5('DesignPattern\Creational\ObjectPool') => 'design_patterns/creational_patterns/object_pool/src',
-    md5('DesignPattern\Structural\DependencyInjection') => 'design_patterns/structural_patterns/dependency_injection/src',
+    md5('DesignPatterns') => 'design_patterns/core',
+    md5('DesignPatterns\Creational\AbstractFactory') => 'design_patterns/creational/abstract_factory/src',
+    md5('DesignPatterns\Creational\Builder') => 'design_patterns/creational/builder/src',
+    md5('DesignPatterns\Creational\FactoryMethod') => 'design_patterns/creational/method_factory/src',
+    md5('DesignPatterns\Creational\Singleton') => 'design_patterns/creational/singleton/src',
+    md5('DesignPatterns\Creational\Prototype') => 'design_patterns/creational/prototype/src',
+    md5('DesignPatterns\Creational\LazyInitialization') => 'design_patterns/creational/lazy_initialization/src',
+    md5('DesignPatterns\Creational\ObjectPool') => 'design_patterns/creational/object_pool/src',
+    md5('DesignPatterns\Structural\DependencyInjection') => 'design_patterns/structural/dependency_injection/src',
+    md5('DesignPatterns\Structural\Adapter') => 'design_patterns/structural/adapter/src',
+    md5('DesignPatterns\Structural\Bridge') => 'design_patterns/structural/bridge/src',
+    md5('DesignPatterns\Structural\Facade') => 'design_patterns/structural/facade/src',
+    md5('DesignPatterns\Structural\Proxy') => 'design_patterns/structural/proxy/src',
+    md5('DesignPatterns\Structural\Registry') => 'design_patterns/structural/registry/src',
+    md5('DesignPatterns\Structural\Composite') => 'design_patterns/structural/composite/src',
+    md5('DesignPatterns\Structural\DataMapper') => 'design_patterns/structural/data_mapper/src',
+    md5('DesignPatterns\Structural\Decorator') => 'design_patterns/structural/decorator/src',
+    md5('DesignPatterns\Structural\Flyweight') => 'design_patterns/structural/flyweight/src',
+    md5('DesignPatterns\Structural\FluentInterface') => 'design_patterns/structural/fluent_interface/src',
 ];
 
 function autoload(string $class)
