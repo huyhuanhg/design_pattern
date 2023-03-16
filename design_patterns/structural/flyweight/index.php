@@ -2,6 +2,6 @@
 
 use DesignPatterns\Structural\Flyweight\FlyweightTest;
 
-require_once '../../../core/index.php';
+require_once '../../core/index.php';
 
 (new FlyweightTest())->testFlyweight();

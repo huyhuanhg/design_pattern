@@ -2,7 +2,7 @@
 
 use DesignPatterns\Creational\Singleton\Singleton;
 
-require_once '../../../core/index.php';
+require_once '../../core/index.php';
 
 /**
  * Normal Class

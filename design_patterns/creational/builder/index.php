@@ -2,7 +2,7 @@
 
 use DesignPatterns\Creational\Builder\Creator;
 
-require_once '../../../core/index.php';
+require_once '../../core/index.php';
 
 //Khởi tạo
 dump(Creator::car());

@@ -5,7 +5,7 @@ use DesignPatterns\Creational\Prototype\PHPBookPrototype;
 use DesignPatterns\Creational\Prototype\Prototype;
 use DesignPatterns\Creational\Prototype\SQLBookPrototype;
 
-require_once '../../../core/index.php';
+require_once '../../core/index.php';
 
   writeln('BEGIN TESTING PROTOTYPE PATTERN');
   writeln('');

@@ -2,7 +2,7 @@
 
 use DesignPatterns\Creational\AbstractFactory\FormatCreator;
 
-require_once '../../../core/index.php';
+require_once '../../core/index.php';
 
 $factory = new FormatCreator();
 

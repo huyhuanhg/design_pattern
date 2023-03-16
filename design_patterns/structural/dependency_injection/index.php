@@ -2,7 +2,7 @@
 
 use DesignPatterns\Structural\DependencyInjection\Container;
 
-require_once '../../../core/index.php';
+require_once '../../core/index.php';
 
 class User
 {
