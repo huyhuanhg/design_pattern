@@ -2,6 +2,6 @@
 
 use DesignPatterns\Structural\Proxy\ProxyTest;
 
-require_once '../../../core/index.php';
+require_once '../../core/index.php';
 
 ProxyTest::testProxyWillOnlyExecuteExpensiveGetBalanceOnce();

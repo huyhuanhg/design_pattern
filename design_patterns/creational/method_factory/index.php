@@ -2,7 +2,7 @@
 
 use DesignPatterns\Creational\FactoryMethod\Creator;
 
-require_once '../../../core/index.php';
+require_once '../../core/index.php';
 
 $creator = new Creator();
 

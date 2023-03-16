@@ -20,6 +20,7 @@ $namespaceMap = [
     md5('DesignPatterns\Structural\Decorator') => 'design_patterns/structural/decorator/src',
     md5('DesignPatterns\Structural\Flyweight') => 'design_patterns/structural/flyweight/src',
     md5('DesignPatterns\Structural\FluentInterface') => 'design_patterns/structural/fluent_interface/src',
+    md5('DesignPatterns\Behavioral\Command') => 'design_patterns/behavioral/command/src',
 ];
 
 function autoload(string $class)
