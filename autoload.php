@@ -32,6 +32,9 @@ $namespaceMap = [
     md5('DesignPatterns\Behavioral\Strategy') => 'design_patterns/behavioral/strategy/src',
     md5('DesignPatterns\Behavioral\TemplateMethod') => 'design_patterns/behavioral/template_method/src',
     md5('DesignPatterns\Behavioral\Visitor') => 'design_patterns/behavioral/visitor/src',
+    md5('DesignPatterns\More\ServiceLocator') => 'design_patterns/more/service_locator/src',
+    md5('DesignPatterns\More\Repository') => 'design_patterns/more/repository/src',
+    md5('DesignPatterns\More\EAV') => 'design_patterns/more/entity_attribute_value/src',
 ];
 
 function autoload(string $class)
