@@ -21,6 +21,17 @@ $namespaceMap = [
     md5('DesignPatterns\Structural\Flyweight') => 'design_patterns/structural/flyweight/src',
     md5('DesignPatterns\Structural\FluentInterface') => 'design_patterns/structural/fluent_interface/src',
     md5('DesignPatterns\Behavioral\Command') => 'design_patterns/behavioral/command/src',
+    md5('DesignPatterns\Behavioral\Interpreter') => 'design_patterns/behavioral/interpreter/src',
+    md5('DesignPatterns\Behavioral\Iterator') => 'design_patterns/behavioral/iterator/src',
+    md5('DesignPatterns\Behavioral\Mediator') => 'design_patterns/behavioral/mediator/src',
+    md5('DesignPatterns\Behavioral\Memento') => 'design_patterns/behavioral/memento/src',
+    md5('DesignPatterns\Behavioral\NullObject') => 'design_patterns/behavioral/null_object/src',
+    md5('DesignPatterns\Behavioral\Observer') => 'design_patterns/behavioral/observer/src',
+    md5('DesignPatterns\Behavioral\Specification') => 'design_patterns/behavioral/specification/src',
+    md5('DesignPatterns\Behavioral\State') => 'design_patterns/behavioral/state/src',
+    md5('DesignPatterns\Behavioral\Strategy') => 'design_patterns/behavioral/strategy/src',
+    md5('DesignPatterns\Behavioral\TemplateMethod') => 'design_patterns/behavioral/template_method/src',
+    md5('DesignPatterns\Behavioral\Visitor') => 'design_patterns/behavioral/visitor/src',
 ];
 
 function autoload(string $class)
